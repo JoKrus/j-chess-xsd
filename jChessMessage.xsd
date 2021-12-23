@@ -159,6 +159,7 @@
       <xs:enumeration value="TOO_MANY_TRIES"/>
       <xs:enumeration value="UNSUPPORTED_OPERATION"/>
       <xs:enumeration value="DUPLICATE_NAME"/>
+      <xs:enumeration value="VERSION_MISMATCH"/>
     </xs:restriction>
   </xs:simpleType>
 
