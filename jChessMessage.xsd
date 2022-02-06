@@ -43,7 +43,7 @@
       </xs:choice>
       <xs:attribute name="messageType" type="JChessMessageType" use="required"/>
       <xs:attribute name="playerId" type="UUID" use="required"/>
-      <xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="0.1.1"/>
+      <xs:attribute name="schemaVersion" type="xs:string" use="required" fixed="0.2.0"/>
     </xs:complexType>
   </xs:element>
 
@@ -57,6 +57,7 @@
   <xs:complexType name="LoginMessage">
     <xs:sequence>
       <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="tournamentCode" type="UUID" minOccurs="0" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
 
