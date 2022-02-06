@@ -21,9 +21,8 @@ jobs:
         with:
           python-version: 3.x
           architecture: x64
-      - run: |
-        python3 -m pip install --user packaging
-        python3 -m pip install --user xmlschema
+      - run: python3 -m pip install --user packaging
+      - run: python3 -m pip install --user xmlschema
 
       - name: 'Get Previous tag'
         id: previoustag
