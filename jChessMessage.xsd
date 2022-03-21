@@ -239,7 +239,7 @@
 
   <xs:simpleType name="PromotionPiece">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[nNbBrRqQ]"/>
+      <xs:pattern value="[nbrq]"/>
     </xs:restriction>
   </xs:simpleType>
 
